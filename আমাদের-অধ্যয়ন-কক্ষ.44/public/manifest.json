@@ -1,0 +1,41 @@
+{
+  "id": "/",
+  "name": "আমাদের অধ্যয়ন কক্ষ",
+  "short_name": "অধ্যয়ন কক্ষ",
+  "description": "অনলাইন পার্টনার ও গ্রুপ স্টাডি প্ল্যাটফর্ম - যেখানে একসাথে পড়া, টাইমার, ডেইলি টাস্ক ট্র্যাকার, নামাজ ট্র্যাকার, অনুপ্রেরণামূলক উক্তি, লিডারবোর্ড এবং চ্যাটের সুবিধা রয়েছে।",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#064e3b",
+  "background_color": "#022c22",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
