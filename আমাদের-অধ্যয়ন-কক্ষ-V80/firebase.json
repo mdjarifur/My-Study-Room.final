@@ -1,0 +1,58 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": [
+    {
+      "site": "reading-room-14320",
+      "redirects": [
+        {
+          "source": "/**",
+          "destination": "https://study-room-14320.web.app",
+          "type": 301
+        }
+      ]
+    },
+    {
+      "site": "study-room-14320",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "sw.js",
+          "headers": [
+            { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+            { "key": "Service-Worker-Allowed", "value": "/" },
+            { "key": "Content-Type", "value": "application/javascript; charset=utf-8" }
+          ]
+        },
+        {
+          "source": "manifest.json",
+          "headers": [
+            { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+            { "key": "Content-Type", "value": "application/manifest+json; charset=utf-8" }
+          ]
+        },
+        {
+          "source": "**/*.@(html|js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        }
+      ],
+      "rewrites": [
+        {
+          "source": "/admin",
+          "destination": "/admin.html"
+        }
+      ]
+    }
+  ]
+}
